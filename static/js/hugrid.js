@@ -267,7 +267,7 @@ var Grid = (function() {
     create : function() {
       this.$title = $( '<h3></h3>' );
       this.$description = $( '<p></p>' );
-      this.$href = $( '<a href="#" target="_blank">{{ .Site.Params.buttontext }}</a>' );
+      this.$href = $( '<a href="#" target="_blank">Full size picture</a>' );
       this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
       this.$loading = $( '<div class="og-loading"></div>' );
       this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
@@ -306,7 +306,7 @@ var Grid = (function() {
       this.$title.html( eldata.title );
       this.$description.html( eldata.description );
       if(eldata.buttontext) this.$href.text(eldata.buttontext);
-      else this.$href.text("{{ .Site.Params.buttontext }}")
+      else this.$href.text("Full size picture")
 
       if (eldata.href) {
         this.$href.attr( 'href', eldata.href );
