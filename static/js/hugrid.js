@@ -430,8 +430,7 @@ var Grid = (function() {
   };
 
 })();
-</script>
-<script>
+
 $(function() {
   Grid.init();
 });
