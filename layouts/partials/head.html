@@ -5,7 +5,8 @@
 		<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}" />
 		<meta name="keywords" content="{{ with .Site.Params.keywords }}{{ . }}{{ end }}" />
 		<meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}" />
-		<link rel="icon" href="{{ .Site.Params.BaseURL }}favicon.ico" />
+		<link rel="shortcut icon" href="{{"images/favicon.ico" | relURL}}">
+		<link rel="apple-touch-icon" href="{{"images/apple-touch-icon.png" | relURL}}" />
 		{{ .Hugo.Generator }}
 		<style>
 		body {
